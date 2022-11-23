@@ -1,11 +1,11 @@
+import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'home.dart';
-import 'list.dart';
+import 'chara.dart';
 import 'settings.dart';
 import 'about.dart';
-import 'random.dart';
+import 'equip.dart';
 
 void main() {
   runApp(const MyApp());
@@ -195,7 +195,7 @@ class ExitBox extends StatelessWidget {
         TextButton(
           child: const Text("yes"),
           onPressed: () {
-            SystemNavigator.pop();
+            exit(0);
           },
         ),
       ],
